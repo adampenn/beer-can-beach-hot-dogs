@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freedom Isn't Free, But Our Hot Dogs Are — Beer Can Beach Hot Dog Stand · Butte County, CA</title>
+<meta name="description" content="Free hot dogs on Beer Can Beach, Sacramento River, Butte County CA. Every July 4th, 11 AM to 5 PM. 8 years running. Closed the other 364 days.">
+<meta property="og:title" content="Freedom Isn't Free, But Our Hot Dogs Are">
+<meta property="og:description" content="The Beer Can Beach Hot Dog Stand · Open one day a year: July 4th, 11 AM – 5 PM · Sacramento River, Butte County CA">
+<meta property="og:image" content="photos/banner-closeup.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Special+Elite&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌭</text></svg>">
+<style>
+  :root {
+    --navy: #1d2b53;
+    --red: #b22234;
+    --cream: #faf4e4;
+    --paper: #fffdf5;
+    --gold: #c9a227;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--cream);
+    color: var(--navy);
+    font-family: 'Libre Baskerville', Georgia, serif;
+    line-height: 1.7;
+  }
+  h1, h2, h3 { font-family: 'Alfa Slab One', 'Arial Black', serif; font-weight: 400; line-height: 1.15; }
+  .type { font-family: 'Special Elite', 'Courier New', monospace; }
+
+  /* Bunting */
+  .bunting { display: flex; height: 14px; }
+  .bunting span { flex: 1; }
+  .bunting span:nth-child(3n+1) { background: var(--red); }
+  .bunting span:nth-child(3n+2) { background: var(--paper); }
+  .bunting span:nth-child(3n)   { background: var(--navy); }
+
+  header {
+    background: var(--navy);
+    color: var(--cream);
+    text-align: center;
+    padding: 3.5rem 1.25rem 3rem;
+    background-image: radial-gradient(rgba(250,244,228,.07) 1.4px, transparent 1.4px);
+    background-size: 26px 26px;
+  }
+  .stars { color: var(--gold); letter-spacing: .6em; font-size: 1.1rem; margin-bottom: 1.2rem; }
+  header .kicker {
+    font-family: 'Special Elite', monospace;
+    text-transform: uppercase; letter-spacing: .25em; font-size: .85rem;
+    color: #f0c8c8; margin-bottom: 1rem;
+  }
+  h1 { font-size: clamp(2rem, 6vw, 4.2rem); text-transform: uppercase; }
+  h1 .free { color: #e8b6b6; }
+  h1 .hotdogs { color: var(--gold); }
+  header .sub {
+    font-style: italic; margin-top: 1.2rem; font-size: clamp(1rem, 2.2vw, 1.25rem); color: #cdd5ee;
+  }
+
+  /* Ticket */
+  .ticket-wrap { display: flex; justify-content: center; padding: 0 1.25rem; margin-top: -1.6rem; position: relative; z-index: 2; }
+  .ticket {
+    background: var(--paper);
+    border: 3px dashed var(--red);
+    box-shadow: 0 6px 0 rgba(29,43,83,.18);
+    padding: 1.4rem 2.2rem; text-align: center; max-width: 640px; transform: rotate(-.8deg);
+  }
+  .ticket .big { font-family: 'Alfa Slab One', serif; font-size: clamp(1.3rem, 3.5vw, 2rem); color: var(--red); text-transform: uppercase; }
+  .ticket .when { font-family: 'Special Elite', monospace; font-size: clamp(1rem, 2.5vw, 1.3rem); margin-top: .4rem; }
+  .ticket .closed { font-size: .85rem; font-style: italic; color: #6a6a5a; margin-top: .5rem; }
+
+  section { max-width: 980px; margin: 0 auto; padding: 4rem 1.25rem; }
+  .rule { text-align: center; color: var(--red); letter-spacing: .5em; font-size: 1.2rem; margin-bottom: 2.2rem; }
+  h2 { font-size: clamp(1.6rem, 4vw, 2.4rem); text-transform: uppercase; text-align: center; margin-bottom: 1.6rem; }
+  h2 em { color: var(--red); font-style: normal; }
+  .prose { max-width: 700px; margin: 0 auto; font-size: 1.05rem; }
+  .prose p + p { margin-top: 1.2rem; }
+  .prose .lead::first-letter {
+    font-family: 'Alfa Slab One', serif; font-size: 3.2em; float: left;
+    line-height: .85; padding-right: .12em; color: var(--red);
+  }
+
+  /* Hero photo */
+  .hero-photo { max-width: 1100px; margin: 0 auto; padding: 3rem 1.25rem 0; }
+  .polaroid {
+    background: var(--paper); padding: 14px 14px 48px; box-shadow: 0 10px 24px rgba(29,43,83,.22);
+    border: 1px solid #e7e0cc;
+  }
+  .polaroid img { width: 100%; display: block; }
+  .polaroid figcaption { text-align: center; margin-top: 14px; font-family: 'Special Elite', monospace; font-size: .95rem; color: #444; }
+
+  /* Menu */
+  .menu-board {
+    background: var(--paper); border: 3px solid var(--navy); max-width: 560px; margin: 0 auto;
+    padding: 2.2rem 2rem; box-shadow: 8px 8px 0 var(--red); text-align: center;
+  }
+  .menu-board h3 { text-transform: uppercase; letter-spacing: .15em; font-size: 1.1rem; border-bottom: 2px solid var(--navy); padding-bottom: .8rem; margin-bottom: 1.4rem; }
+  .menu-item { display: flex; align-items: baseline; gap: .6rem; font-family: 'Special Elite', monospace; font-size: 1.05rem; margin-top: 1rem; text-align: left; }
+  .menu-item .dots { flex: 1; border-bottom: 2px dotted #9a9480; }
+  .menu-item .price { color: var(--red); font-weight: bold; white-space: nowrap; }
+  .menu-note { margin-top: 1.6rem; font-style: italic; font-size: .9rem; color: #6a6a5a; }
+
+  /* Gallery */
+  .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.6rem; margin-top: 2.4rem; }
+  .gallery figure {
+    background: var(--paper); padding: 10px 10px 34px; border: 1px solid #e7e0cc;
+    box-shadow: 0 6px 16px rgba(29,43,83,.16);
+  }
+  .gallery figure:nth-child(odd) { transform: rotate(-1.1deg); }
+  .gallery figure:nth-child(even) { transform: rotate(1deg); }
+  .gallery img { width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover; }
+  .gallery figcaption { text-align: center; margin-top: 10px; font-family: 'Special Elite', monospace; font-size: .85rem; color: #444; }
+
+  /* Find us */
+  .find { background: var(--navy); color: var(--cream); }
+  .find-inner { max-width: 980px; margin: 0 auto; padding: 4rem 1.25rem; }
+  .find h2 { color: var(--cream); }
+  .find h2 em { color: var(--gold); }
+  .find .prose { color: #dde3f5; }
+  .find a { color: var(--gold); }
+  .steps { max-width: 700px; margin: 2rem auto 0; counter-reset: step; list-style: none; }
+  .steps li { counter-increment: step; display: flex; gap: 1.1rem; margin-top: 1.3rem; align-items: baseline; }
+  .steps li::before {
+    content: counter(step); font-family: 'Alfa Slab One', serif; color: var(--gold);
+    border: 2px solid var(--gold); border-radius: 50%; width: 2.1rem; height: 2.1rem;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem;
+    transform: translateY(.35rem);
+  }
+
+  /* Press */
+  .press blockquote {
+    max-width: 640px; margin: 0 auto; text-align: center; font-style: italic;
+    font-size: clamp(1.1rem, 2.6vw, 1.45rem); color: var(--navy);
+  }
+  .press cite { display: block; margin-top: 1.2rem; font-family: 'Special Elite', monospace; font-style: normal; font-size: .95rem; color: var(--red); }
+
+  footer { background: #14203f; color: #aab4d4; text-align: center; padding: 2.6rem 1.25rem; font-size: .9rem; }
+  footer .flag { font-size: 1.4rem; margin-bottom: .6rem; }
+  footer .tag { font-family: 'Special Elite', monospace; color: var(--gold); margin-bottom: .8rem; }
+</style>
+</head>
+<body>
+
+<div class="bunting" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<header>
+  <div class="stars">★ ★ ★</div>
+  <p class="kicker">Beer Can Beach · Sacramento River · Butte County, California</p>
+  <h1>Freedom Isn't <span class="free">Free</span>,<br>But Our <span class="hotdogs">Hot Dogs</span> Are</h1>
+  <p class="sub">One grill. One beach. One day a year. Eight years running.</p>
+</header>
+
+<div class="ticket-wrap">
+  <div class="ticket">
+    <div class="big">Open July 4th Only</div>
+    <div class="when">11:00 AM — 5:00 PM · Rain or Shine (it never rains)</div>
+    <div class="closed">Closed the other 364 days of the year. See you next Fourth.</div>
+  </div>
+</div>
+
+<div class="hero-photo">
+  <figure class="polaroid">
+    <img src="photos/tent-river.jpg" alt="Stars-and-stripes canopy on the Sacramento River with the Freedom Isn't Free But Our Hot Dogs Are banner">
+    <figcaption>The stand, right where the sand meets the river. Follow the eagle. — July 4th, 2026</figcaption>
+  </figure>
+</div>
+
+<section>
+  <div class="rule">★ ★ ★</div>
+  <h2>The <em>Story</em></h2>
+  <div class="prose">
+    <p class="lead">Eight years ago, one guy hauled a folding table, a propane grill, and a couple packs of hot dogs down to Beer Can Beach on the Fourth of July and started handing out free lunch to anyone floating by. No catch, no tip jar, no fine print. Just a hot dog, on the house, on America's birthday.</p>
+    <p>It's been an annual tradition ever since. Every year the tent goes up on the sand, the flag goes up the pole, the grill gets loaded — around 300 hot dogs' worth — and river floaters paddle over wondering if "free" really means free. It does. It always has.</p>
+    <p>Why? Because it's the Fourth of July, you're on a river in America, and somebody ought to hand you a hot dog.</p>
+  </div>
+</section>
+
+<section>
+  <div class="rule">★ ★ ★</div>
+  <h2>The <em>Menu</em></h2>
+  <div class="menu-board">
+    <h3>— Today's Offerings —</h3>
+    <div class="menu-item"><span>Hot Dog, Grilled</span><span class="dots"></span><span class="price">FREE</span></div>
+    <div class="menu-item"><span>Bun</span><span class="dots"></span><span class="price">FREE</span></div>
+    <div class="menu-item"><span>Ketchup, Mustard, Mayo</span><span class="dots"></span><span class="price">FREE</span></div>
+    <div class="menu-item"><span>Chips (while they last)</span><span class="dots"></span><span class="price">FREE</span></div>
+    <div class="menu-item"><span>Seconds</span><span class="dots"></span><span class="price">ALSO FREE</span></div>
+    <p class="menu-note">Prices subject to never changing. We do not accept cash, cards, or Venmo. We accept "thank you."</p>
+  </div>
+</section>
+
+<section>
+  <div class="rule">★ ★ ★</div>
+  <h2>Scenes from the <em>Beach</em></h2>
+  <div class="gallery">
+    <figure>
+      <img src="photos/banner-closeup.jpg" alt="The famous banner: Freedom Isn't Free But Our Hot Dogs Are">
+      <figcaption>The banner says it all.</figcaption>
+    </figure>
+    <figure>
+      <img src="photos/dogs-grilling.jpg" alt="Hot dogs on the grill at Beer Can Beach">
+      <figcaption>The production line.</figcaption>
+    </figure>
+    <figure>
+      <img src="photos/beach-scene.jpg" alt="Floaters and tents on the shore of the Sacramento River">
+      <figcaption>Front-row seats on the sand.</figcaption>
+    </figure>
+    <figure>
+      <img src="photos/river-floaters.jpg" alt="Paddleboards and floaters arriving at Beer Can Beach">
+      <figcaption>Arriving by tube, board, and raft.</figcaption>
+    </figure>
+    <figure>
+      <img src="photos/crew-tent.jpg" alt="Friends under the canopy at the hot dog stand">
+      <figcaption>The regulars.</figcaption>
+    </figure>
+    <figure>
+      <img src="photos/founders.jpg" alt="The crew in stars and stripes on the river">
+      <figcaption>Dressed for the occasion.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="find">
+  <div class="find-inner">
+    <div class="rule" style="color:var(--gold)">★ ★ ★</div>
+    <h2>Finding <em>The Stand</em></h2>
+    <div class="prose" style="text-align:center; max-width: 640px;">
+      <p>You can't drive here, and that's the point. The stand sets up on
+      <a href="https://www.google.com/maps/search/Beer+Can+Beach+Sacramento+River+Chico+CA" target="_blank" rel="noopener">Beer Can Beach</a>,
+      a sandbar on the Sacramento River in Butte County, California.</p>
+    </div>
+    <ol class="steps">
+      <li>Put in at Irvine Finch River Access on Highway 32 (or launch wherever river folk launch).</li>
+      <li>Float downstream with the rest of Chico.</li>
+      <li>Watch the right bank for the stars-and-stripes canopy and the eagle banner.</li>
+      <li>Paddle over. Say hi. Get a hot dog. It's free.</li>
+    </ol>
+    <div class="prose" style="text-align:center; margin-top: 2.2rem; font-style: italic;">
+      <p>Pro tip: pack out your trash. It's called Beer Can Beach — it doesn't have to look like one.</p>
+    </div>
+  </div>
+</div>
+
+<section class="press">
+  <div class="rule">★ ★ ★</div>
+  <h2>In the <em>Papers</em></h2>
+  <blockquote>
+    "Floaters and tubers going down the Sacramento River&hellip; found a pleasant surprise on Independence Day&hellip; a free hot dog stand on Beer Can Beach&hellip; A banner posted at the stand stated, 'Freedom isn't free, but our hot dogs are.'"
+    <cite>— <a href="https://www.chicoer.com/2025/07/08/hot-dogs-attract-river-riders-to-beer-can-beach/" target="_blank" rel="noopener" style="color:inherit">Chico Enterprise-Record, July 2025</a> · <a href="https://www.chicoer.com/2025/07/08/hot-dogs-attract-river-riders-to-beer-can-beach/" target="_blank" rel="noopener" style="color:var(--red)">Read the story →</a></cite>
+  </blockquote>
+</section>
+
+<div class="bunting" aria-hidden="true">
+  <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<footer>
+  <div class="flag">🇺🇸</div>
+  <div class="tag">Freedom Isn't Free, But Our Hot Dogs Are</div>
+  <div>Beer Can Beach · Sacramento River · Butte County, CA<br>
+  Open July 4th, 11 AM – 5 PM · Est. 2019 · Eight years and counting</div>
+</footer>
+
+</body>
+</html>
