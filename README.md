@@ -14,7 +14,7 @@ python3 -m http.server 4747 --directory .
 
 ## Deployment
 
-**Live at https://beer-can-beach-hot-dogs.onrender.com** — Render static site
+**Live at https://freedomhotdogs.com** — GitHub Pages (repo `adampenn/beer-can-beach-hot-dogs`, `main` branch, CNAME file). Legacy copy: Render static site
 (`srv-d94qbosvikkc73cs10v0`), auto-deploys on push to `main` of
 `adampenn/beer-can-beach-hot-dogs`. Commit + push is the test loop.
 
@@ -34,7 +34,7 @@ Do this from HIS Google account at https://business.google.com → "Add business
 | Location | Do NOT add a street address. Choose "I deliver goods and services to my customers" → service area: Chico, CA (it's a sandbar; no address exists) |
 | Service area | Chico, CA 95928 |
 | Hours | Set regular hours to **Closed** for all seven days, then use **Special hours**: add July 4 each year, 11:00 AM – 5:00 PM |
-| Phone / website | His phone (optional) + the deployed site URL |
+| Phone / website | His phone (optional) + https://freedomhotdogs.com |
 | Description | Free hot dogs on Beer Can Beach every July 4th, 11 AM to 5 PM — eight years running. One grill, one beach, one day a year. Hot dogs, buns, condiments, and seconds: all free. Float in, paddle over to the stars-and-stripes canopy, and grab lunch on America's birthday. Closed the other 364 days. |
 | Photos | Upload the shots in `photos/` — set `tent-river.jpg` as the cover |
 
