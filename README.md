@@ -12,19 +12,16 @@ python3 -m http.server 4747 --directory .
 # open http://localhost:4747
 ```
 
-## Deploy (pick one)
+## Deployment
 
-**Netlify Drop (easiest, free, no account needed to start):**
-drag this folder onto https://app.netlify.com/drop — done. Free subdomain like
-`beercanbeachhotdogs.netlify.app`; add a custom domain later if he buys one.
+**Live at https://beer-can-beach-hot-dogs.onrender.com** — Render static site
+(`srv-d94qbosvikkc73cs10v0`), auto-deploys on push to `main` of
+`adampenn/beer-can-beach-hot-dogs`. Commit + push is the test loop.
 
-**GitHub Pages:** push this folder to a repo, Settings → Pages → deploy from
-`main` branch root.
-
-**Render:** New → Static Site, point at the repo, publish directory `.`.
-
-A fun cheap domain if he wants one: `freedomisntfreebutourhotdogsare.com`,
-`beercanbeachdogs.com`, or a `.us` variant (very on-brand).
+Domain candidates confirmed available as of July 2026:
+`freedomisntfreebutourhotdogsare.com`, `beercanbeachdogs.com`,
+`freedomhotdogs.com`, `butourhotdogsare.com`, `beercanbeach.us`.
+Add via Render dashboard → Settings → Custom Domains.
 
 ## Google Business Profile setup
 
